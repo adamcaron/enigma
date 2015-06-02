@@ -53,3 +53,8 @@
 
             // Rotation or loop-around: (index + key) - 39 [total-characters-in-character-map]
 
+            // Consider .rotate as a method to offset through the array
+
+            // rotate the original array (the distance of the offset) into a new array set up two arrays, and map the two arrays into a hash of key/value pairs.
+            // do this for A rotations, B, C, and D rotations.
+
