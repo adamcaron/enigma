@@ -1,6 +1,7 @@
 # ENCRYPT
 
   ## Rotation
+
     Given Date: 060215
 
     Given Character Map:
