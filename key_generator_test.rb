@@ -9,4 +9,6 @@ class KeyGeneratorTest < Minitest::Test
   end
   def test_it_generates_a_5_digit_number
   end
+  def test_the_number_is_random
+  end
 end
