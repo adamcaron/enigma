@@ -9,6 +9,9 @@ class EncryptorTest < Minitest::Test
     assert encryptor.encrypted_string == ""
   end
   def test_it_encrypts_a_character
+    assert
+  end
+  def test_it_outputs_encrypted_char_as_string
   end
   def test_it_encrypts_two_characters
   end
