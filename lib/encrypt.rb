@@ -1,3 +1,5 @@
+require_relative 'key_generator'
+require_relative 'offset_calculator'
 # Write a Ruby program that can just output a string like:
 
 # $ ruby ./lib/encrypt.rb message.txt encrypted.txt
@@ -9,17 +11,45 @@
 # Get today's date, format it, and output it in the string
 # Generate a random number as the key and output it in the string
 
-# encrypted_message = Enigma.encrypt(message, key, date)
-
 # class Encrypt
   # reads unencrypted_message
-  message = File.open("message.txt", "r")
-  #
-  p message.read
-  # message.encrypt
+  unencrypted_message = File.open("message.txt", "r")
+  # encrypts message
+
+  # chunks into 4-char groups
+  groups = []
+  unencrypted_message.read.chars.each_slice(4) do |slice|
+    groups << slice
+  end
+  p groups
+
+  # gets rotation
+
+  # returns offset
+
+
+  # returns key
+  p KeyGenerator.new.new_key
+  p OffsetCalculator.new.offset
+
+
+
+
+
+  groups.map do |group|
+    # group[0].rotate_a
+    # group[1].rotate_b
+    # group[2].rotate_c
+    # group[3].rotate_d
+  end
+
+
+
+
+
   encrypted_message = File.open("encrypted_message.txt", "w")
   if __FILE__ == $0
-    input_path = ARGV[0]
+    input_path = ARGV[0] #
     output_path = ARGV[1]
   end
 # end

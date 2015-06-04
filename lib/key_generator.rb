@@ -1,5 +1,5 @@
 class KeyGenerator
-  # attr_reader :key
+  attr_reader :key
   def initialize(key=new_key)
     @key = key
     # @new_key = new_key
