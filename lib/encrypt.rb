@@ -9,16 +9,20 @@
 # Get today's date, format it, and output it in the string
 # Generate a random number as the key and output it in the string
 
-class Encrypt
+# encrypted_message = Enigma.encrypt(message, key, date)
+
+# class Encrypt
+  # reads unencrypted_message
   message = File.open("message.txt", "r")
-  p message
-  message.encrypt
+  #
+  p message.read
+  # message.encrypt
   encrypted_message = File.open("encrypted_message.txt", "w")
   if __FILE__ == $0
     input_path = ARGV[0]
     output_path = ARGV[1]
   end
-end
+# end
 
 # ## Rotation
 
