@@ -20,7 +20,7 @@ class KeyGeneratorTest < Minitest::Test
     assert_equal 5, keyifier.key.to_s.length
   end
   def test_it_generates_a_key_when_no_key_is_provided
-
+    skip
   end
   def test_generated_key_is_valid
     skip

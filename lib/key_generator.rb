@@ -7,11 +7,8 @@ class KeyGenerator
   def key
     @key
   end
-  # def new_key
-  #   @new_key
-  # end
-
-# generates key of 5 random numbers
-key = 5.times.map { Random.rand(1..9).to_s }.join.to_i
-p key.class
+  def new_key
+    # .to_i does weird things to 0
+    5.times.map { Random.rand(1..9).to_s }.join.to_i
+  end
 end
